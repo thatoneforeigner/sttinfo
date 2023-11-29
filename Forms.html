@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Forms</title>
+<style>
+.red {
+	color:red;
+}
+.space {
+	margin:5px 0;
+}
+</style>
+</head>
+<body>
+<form action="mailto:ethobdy@student.antilles.vi" method=”post”, enctype=”text/plain”>
+	<div class="space">
+		<label for="fname">First Name:<span class="red">*</span></label><br>
+		<input type="text" name="fname" placeholder="Ethann" id="fname"></input>
+	</div>
+	<div class="space">
+		<label for="lname">Last Name:<span class="red">*</span></label><br>
+		<input type="text" placeholder="Hobdy" name="lname"></input><br>
+	</div>
+	<div class="space">
+		<label for="phone">Enter Your Phone Number:</label><br>
+		<input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+	</div>
+	<div class="space">
+		<label for="dob">Date of Birth:</label><br>
+		<input name="dob" type="date" value="dob"></input><br>
+	</div>
+	<div class="space">
+		<label for="email">Email Address:<span class="red">*</span><label><br>
+		<input type="email" name="email" placeholder="name@gmail.com" required></input>
+	</div>
+	<input type="submit" value="send">
+	</form>
+	
+	<form>
+	<div style="margin-top:10px;margin-bottom:10px;">
+		Choose the better drink:
+	</div>
+	<div class="space">
+	Orange Juice <input type="radio" name="fav_drink" value="orange_juice"><br>
+	Apple Juice <input type="radio" name="fav_drink" value="apple_juice"><br>
+	Lemonade <input type="radio" name="fav_drink" value="lemonade"><br>
+	Other: <input type="radio" name="fav_drink" value="other">
+	<input type="text" placeholder="type here" name="fav_drink">
+	</div>
+		<textarea name="comment" rows="4" cols="50" form="usrform" placeholder="Leave a comment as to why that's the better drink..."></textarea>
+	<div class="space">
+		<label for="rate">Rate This Website out of Ten</label>
+		<input type="quantity" name="rate" min="0" max="10">
+		</div>
+	</div>
+	<div class="space">
+		<input type="submit" value="submit"></input>
+		<input type="reset" value="reset"></input>
+	</div>
+</form>
+</body>
+</html>
